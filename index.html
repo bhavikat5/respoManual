@@ -172,7 +172,7 @@
       /* ── Cards Grid ── */
       .cards-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
       }
 
@@ -226,6 +226,12 @@
         background: #eff6ff;
         color: #1d4ed8;
         border: 1px solid #dbeafe;
+      }
+
+      .tag-sales {
+        background: #ecfdf5;
+        color: #047857;
+        border: 1px solid #a7f3d0;
       }
 
       .tag-is {
@@ -534,7 +540,48 @@
           </div>
         </a>
 
-        <!-- Card 4: Information Security -->
+        <!-- Card 4: Customer Sales -->
+        <a href="sales_index.html" class="manual-card" target="_blank">
+          <div>
+            <span class="card-tag tag-sales">Customer Sales & Operations</span>
+            <h2 class="card-title">Customer Sales Team Training Manual</h2>
+            <div class="card-audience">
+              👥 Target: Customer Sales Reps & Outreach
+            </div>
+            <p class="card-desc">
+              Communication etiquette, sales frameworks, loan offerings, KFS, and
+              fair practice compliance.
+            </p>
+
+            <div class="key-pills">
+              <span class="key-pill">• Sales Framework</span>
+              <span class="key-pill">• KFS & Code</span>
+            </div>
+          </div>
+
+          <div class="card-footer-row">
+            <div class="card-meta-text">📚 10 Modules • Quiz</div>
+            <div class="card-btn">
+              Launch Manual
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 5: Information Security -->
         <a href="is_index.html" class="manual-card" target="_blank">
           <div>
             <span class="card-tag tag-is">IT Security & Data Protection</span>
